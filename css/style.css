@@ -1,0 +1,143 @@
+:root {
+    --dark: #0D0D0D;
+    --light:  #fef9f8;
+    --peach: #EF9273;
+    --paleto: #f9d1d1;
+
+}
+
+body{
+    font-size: 150%;
+    background: url('../img/barbershop_background-20.jpg');
+    background-size: 100% ;
+    font-family: Verdana ;
+}
+
+div{
+   /* border: 1px solid grey; */
+    vertical-align: top;
+    
+}
+.container{
+    width: 1400px;
+    margin: 100px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+     background-color: var(--dark);
+     /* background: url('../img/barbershop_background-20.jpg'); */
+     border-radius: 15px;
+}
+.nav {
+    display: inline-block;
+    padding: 10px;
+    width:1200px;
+    margin-top: 5px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    min-height: 50px; 
+}
+.nav > a {
+    display: inline-block;
+    padding: 10px;
+    color: var(--light);
+    text-decoration: none;
+}
+.nav > a:hover{
+    color: var(--peach);
+}
+
+
+.image-frame {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 15px var(--peach); */
+    animation-name: shadows ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite ;
+    animation-duration:  alternate-reverse ;
+       
+}
+@keyframes  shadows {
+    from {box-shadow: 5px 5px 10px var( --paleto);}
+    to {box-shadow: 5px 5px 25px var( --peach);}
+}
+
+
+.image-frame > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.text-frame {
+    display: inline-block;
+    width: 890px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 50px;
+   /* box-shadow: 5px 5px 25px var(--peach);*/
+}
+
+ .text-frame > h2 {
+    text-align: center;
+    /* color: var( --peach); */
+    font-size: 80px;
+    animation-name: header;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-duration:  alternate-reverse ;
+       
+
+}
+
+@keyframes header {
+    from {color: var(--paleto);}
+    to {color: var(--peach);}
+}
+.text-frame >p {
+    color: var(--light);
+    font-size: 30px;
+    text-align: justify;
+    }
+.footer {
+    width: 600px;
+    min-height: 50px;
+    margin: 50px 0 0 400px;
+    color: var(--peach);
+    text-align: center;
+
+}
+.thumb {
+    display: inline-block ;
+    width: 550px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 100px ;
+
+}
+
+.thumb-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px var(--peach);
+
+}
+.thumb-img :hover{
+    box-shadow: 1px 1px 20px var(--peach);
+}
+
+.video {
+    width: 550px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.map {
+    margin-top: 50px;
+    margin-left: 100px;  
+}
